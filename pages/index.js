@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -24,7 +23,7 @@ export default function Home() {
       </Head>
       <main className="min-h-screen bg-white text-gray-900 p-8">
         <section className="text-center space-y-6 fade-in">
-          <Image src="/logo.png" alt="Legend Travels Logo" width={200} height={200} />
+          <img src="/logo.png" alt="Legend Travels Logo" width="200" height="200" className="mx-auto" />
           <h1 className="text-4xl font-bold">Travel with Confidence</h1>
           <p className="text-lg">Comfortable, clean, and safe transportation for your group.</p>
         </section>
