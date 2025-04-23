@@ -54,7 +54,7 @@ export default function Home() {
 
         <script
           dangerouslySetInnerHTML={{
-            __html: \`
+            __html: `
               var Outdoorsy = Outdoorsy || {};
               Outdoorsy.color = "1b4a8f";
               (function() {
@@ -64,7 +64,7 @@ export default function Home() {
                 var entry = document.getElementsByTagName("script")[0];
                 entry.parentNode.insertBefore(script, entry);
               })();
-            \`,
+            `,
           }}
         />
       </main>
