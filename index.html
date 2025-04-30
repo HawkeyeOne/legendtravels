@@ -4,63 +4,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legend Travels | Premium Van Rentals in Houston</title>
-  <meta name="description" content="Legend Travels offers luxury 15-passenger van rentals in Houston. Ride with comfort, reliability, and style." />
-  <meta name="keywords" content="van rental Houston, 15-passenger van, Legend Travels, airport van service, group transport, Ford Transit high roof dually" />
-  <meta name="author" content="Legend Travels" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Legend Travels | Luxury Van Rentals</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f9fafb; color: #111; scroll-behavior: smooth; }
+    header { background: #0f172a; color: white; padding: 1rem 2rem; text-align: right; }
+    nav a { color: white; text-decoration: none; margin-left: 1rem; font-weight: 500; }
+    .hero {
+      background: url('van-transparent.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 10rem 2rem;
+      min-height: 120vh;
+    }
+    .hero img {
+      max-width: 120px;
+      filter: brightness(0) invert(1);
+      margin-bottom: 1.5rem;
+    }
+    .hero .btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .hero .btn:hover {
+      background: #2563eb;
+    }
+    .section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer p { margin: 0.5rem 0; }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="cta">
-      <a href="#fleet" class="cta-button">Book Now</a>
-    </div>
+  <header>
+    <nav>
+      <a href="#fleet">Fleet</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>About Legend Travels</h2>
-      <p>Legend Travels is your trusted transportation partner in Houston. We provide premium 15-passenger high-roof dually van rentals with top-tier comfort and safety — perfect for group trips, airport runs, and business needs.</p>
-    </section>
+  <section class="hero">
+    <img src="logo.png" alt="Legend Travels Logo">
+    <h1>Luxury Van Rentals</h1>
+    <p>Travel with Confidence</p>
+    <a href="#fleet" class="btn">Book Now</a>
+  </section>
 
-    <section class="fleet" id="fleet">
-      <h2>Our Fleet</h2>
-<script type="text/javascript">
-    var Outdoorsy = Outdoorsy || {};
-    Outdoorsy.color = "1b4a8f";
-    (function() {
-      var script = document.createElement("script");
-      script.src = "https://d3cuf6g1arkgx6.cloudfront.net/sdk/wheelbase.min.js";
-      script.async = true;
-      var entry = document.getElementsByTagName("script")[0];
-      entry.parentNode.insertBefore(script, entry);
-    })();
-</script>
+  <section class="section" id="fleet">
+    <h2 style="text-align:center; margin-bottom: 2rem;">Our Fleet</h2>
+    <div class="fleet-grid">
+      <a href="van1.html" class="card">
+        <img src="van5.jpeg" alt="Van 1">
+        <h3>15-Passenger Van</h3>
+        <p>Perfect for group trips and events.</p>
+      </a>
+      <a href="van2.html" class="card">
+        <img src="van5.jpeg" alt="Van 2">
+        <h3>Executive Van</h3>
+        <p>Ideal for corporate travel and luxury rides.</p>
+      </a>
+      <a href="van3.html" class="card">
+        <img src="van5.jpeg" alt="Van 3">
+        <h3>Shuttle Van</h3>
+        <p>Great for airport transfers and group tours.</p>
+      </a>
+    </div>
+  </section>
 
-<div id="outdoorsy-book-now-container" data-rental="451358" data-color="000000"></div>
-<!--
-      <div class="fleet-images">
-        <a href="#"><img src="assets/van1.png" alt="Exterior of 15-passenger van" /></a>
-        <a href="#"><img src="assets/van2.png" alt="Rear of the van" /></a>
-        <a href="#"><img src="assets/van3.png" alt="Interior seating view" /></a>
-      </div>
--->
-    </section>
-
-    <section class="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Airport Transfers</li>
-        <li>Corporate Group Transport</li>
-        <li>Weddings & Special Events</li>
-        <li>Out-of-Town Excursions</li>
-      </ul>
-    </section>
-  </main>
+  <section class="section" id="contact">
+    <h2 style="text-align:center; margin-bottom: 2rem;">Contact Us</h2>
+    <p style="text-align:center;">Call or Text: (614) 450-2058</p>
+    <p style="text-align:center;">Email: info@legendtravels.net</p>
+  </section>
 
   <footer>
     <p>&copy; 2025 Legend Travels. All rights reserved.</p>
-    <p>Contact: info@legendtravels.com | (123) 456-7890</p>
   </footer>
 </body>
 </html>
