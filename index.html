@@ -30,19 +30,16 @@
       margin-bottom: 1.5rem;
     }
     .hero .btn {
-      font-size: 1.25rem;
-      padding: 1rem 2rem;
-      border-radius: 10px;
       background: #3b82f6;
       color: white;
       border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 1rem;
+      padding: 1.25rem 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 12px;
       text-decoration: none;
       display: inline-block;
+      width: 80%;
+      max-width: 320px;
     }
     .hero .btn:hover { background: #2563eb; }
     .section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
@@ -75,6 +72,16 @@
       padding: 2rem 1rem;
     }
     footer p { margin: 0.5rem 0; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.75rem; }
+      .hero p { font-size: 1.1rem; }
+      .hero .btn {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
